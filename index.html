@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>WYSIXTHE Hosting</title>
+  <title>WYSIXTHE Shop</title>
   <style>
     body {
       margin: 0;
@@ -38,13 +38,13 @@
     }
 
     .hero {
-      padding: 80px 40px;
-      text-align: left;
+      padding: 60px 40px 20px;
+      text-align: center;
     }
 
     .hero h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
+      font-size: 42px;
+      margin-bottom: 10px;
     }
 
     .highlight {
@@ -56,71 +56,116 @@
     .hero p {
       font-size: 18px;
       color: #ccc;
-      max-width: 600px;
     }
 
-    .buttons {
-      margin-top: 30px;
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
     }
 
-    .buttons a {
-      text-decoration: none;
-      padding: 12px 20px;
-      margin-right: 15px;
-      border-radius: 6px;
+    .product {
+      background-color: #1c1e2b;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      transition: transform 0.2s;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+    }
+
+    .product img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      margin-bottom: 15px;
+    }
+
+    .product h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .product p {
+      color: #aaa;
+      margin-bottom: 15px;
+    }
+
+    .product .price {
       font-weight: bold;
-      color: white;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .buy-button {
+      padding: 10px 16px;
       background: linear-gradient(to right, #4f46e5, #9333ea);
+      border: none;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
     }
 
-    .buttons a.secondary {
-      background: #1e1e2f;
-      color: #ccc;
-      border: 1px solid #444;
-    }
-
-    .illustration {
-      position: absolute;
-      right: 40px;
-      top: 160px;
-      opacity: 0.8;
-    }
-
-    @media (max-width: 768px) {
-      .hero {
-        text-align: center;
-        padding: 40px 20px;
-      }
-
-      .illustration {
-        display: none;
-      }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #666;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <div class="logo">WYSIXTHE.pl</div>
+  <div class="logo">WYSIXTHE.shop</div>
   <nav>
     <a href="#">Strona główna</a>
-    <a href="#">Oferta</a>
-    <a href="#">Cennik</a>
-    <a href="#">O nas</a>
+    <a href="#">Sklep</a>
     <a href="#">Kontakt</a>
   </nav>
 </header>
 
 <section class="hero">
-  <h1>WYSIXTHE – Najwyższy poziom <span class="highlight">wydajności</span></h1>
-  <p>
-    Oferujemy szybki i niezawodny hosting Minecraft i VPS KVM. Zapewniamy stabilność, elastyczność oraz wydajność, idealną dla Twoich projektów i serwerów.
-  </p>
-  <div class="buttons">
-    <a href="#">Sprawdź ofertę</a>
-    <a href="#" class="secondary">Społeczność</a>
+  <h1>Sklep <span class="highlight">Grow a Garden</span></h1>
+  <p>Wirtualne itemy, ulepszenia i dodatki do Twojej gry. Kupuj bezpiecznie!</p>
+</section>
+
+<section class="products">
+  <div class="product">
+    <img src="https://cdn-icons-png.flaticon.com/512/3082/3082032.png" alt="Item 1">
+    <h3>Magic Seeds</h3>
+    <p>Specjalne nasiona do szybkiego wzrostu.</p>
+    <div class="price">9.99 zł</div>
+    <a href="#" class="buy-button">Kup teraz</a>
+  </div>
+  <div class="product">
+    <img src="https://cdn-icons-png.flaticon.com/512/2909/2909761.png" alt="Item 2">
+    <h3>Golden Watering Can</h3>
+    <p>Podlewa wszystkie rośliny w zasięgu!</p>
+    <div class="price">14.99 zł</div>
+    <a href="#" class="buy-button">Kup teraz</a>
+  </div>
+  <div class="product">
+    <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Item 3">
+    <h3>Garden Expansion</h3>
+    <p>Zwiększ powierzchnię swojego ogrodu.</p>
+    <div class="price">19.99 zł</div>
+    <a href="#" class="buy-button">Kup teraz</a>
   </div>
 </section>
+
+<footer>
+  &copy; 2025 WYSIXTHE.shop – Wszystkie prawa zastrzeżone
+</footer>
 
 </body>
 </html>
